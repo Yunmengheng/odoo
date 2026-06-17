@@ -1,0 +1,53 @@
+2026-06-15 16:55:13,498 23165 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2026-06-15 16:55:13,498 23165 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2026-06-15 16:55:13,498 23165 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2026-06-15 16:55:13,498 23165 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2026-06-15 16:55:13,498 23165 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2026-06-15 16:55:13,498 23165 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2026-06-15 16:55:13,498 23165 WARNING ? odoo.tools.config: missing --http-interface/http_interface, using 0.0.0.0 by default, will change to 127.0.0.1 in 20.0 
+2026-06-15 16:55:13,498 23165 INFO ? odoo: Odoo version 19.0 
+2026-06-15 16:55:13,498 23165 INFO ? odoo: Using configuration file at /Users/macbook/Documents/Code/odoo/odoo.conf 
+2026-06-15 16:55:13,498 23165 INFO ? odoo: addons paths: _NamespacePath(['/Users/macbook/Documents/Code/odoo/odoo/addons', '/Users/macbook/Library/Application Support/Odoo/addons/19.0', '/Users/macbook/Documents/Code/odoo/addons']) 
+2026-06-15 16:55:13,498 23165 INFO ? odoo: database: odoo@localhost:5432 
+2026-06-15 16:55:13,674 23165 DEBUG ? odoo.service.server: Setting signal handlers 
+2026-06-15 16:55:13,697 23165 DEBUG odoo_db odoo.registry: Multiprocess load registry signaling: [Registry: 3] [Cache default: 1] [Cache assets: 1] [Cache stable: 1] [Cache templates: 1] [Cache routing: 1] [Cache groups: 1] 
+2026-06-15 16:55:13,712 23165 INFO odoo_db odoo.modules.loading: loading 1 modules... 
+2026-06-15 16:55:13,712 23165 DEBUG odoo_db odoo.modules.loading: Loading module base (1/1) 
+2026-06-15 16:55:13,714 23165 DEBUG odoo_db odoo.modules.loading: Module base loaded in 0.00s, 0 queries 
+2026-06-15 16:55:13,714 23165 INFO odoo_db odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2026-06-15 16:55:13,728 23165 INFO odoo_db odoo.modules.loading: updating modules list 
+2026-06-15 16:55:13,730 23165 INFO odoo_db odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2026-06-15 16:55:14,545 23165 DEBUG odoo_db odoo.modules.loading: Updating graph with 10 more modules 
+2026-06-15 16:55:14,546 23165 INFO odoo_db odoo.modules.loading: loading 11 modules... 
+2026-06-15 16:55:14,546 23165 DEBUG odoo_db odoo.modules.loading: Loading module rpc (2/11) 
+2026-06-15 16:55:14,546 23165 DEBUG odoo_db odoo.modules.loading: Module rpc loaded in 0.00s, 0 queries 
+2026-06-15 16:55:14,546 23165 DEBUG odoo_db odoo.modules.loading: Loading module web (3/11) 
+2026-06-15 16:55:14,547 23165 DEBUG odoo_db odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2026-06-15 16:55:14,547 23165 DEBUG odoo_db odoo.modules.loading: Loading module api_doc (4/11) 
+2026-06-15 16:55:14,550 23165 DEBUG odoo_db odoo.modules.loading: Module api_doc loaded in 0.00s, 0 queries 
+2026-06-15 16:55:14,550 23165 DEBUG odoo_db odoo.modules.loading: Loading module auth_totp (5/11) 
+2026-06-15 16:55:14,556 23165 DEBUG odoo_db odoo.modules.loading: Module auth_totp loaded in 0.01s, 0 queries 
+2026-06-15 16:55:14,556 23165 DEBUG odoo_db odoo.modules.loading: Loading module base_import (6/11) 
+2026-06-15 16:55:14,558 23165 DEBUG odoo_db odoo.modules.loading: Module base_import loaded in 0.00s, 0 queries 
+2026-06-15 16:55:14,558 23165 DEBUG odoo_db odoo.modules.loading: Loading module base_import_module (7/11) 
+2026-06-15 16:55:14,561 23165 DEBUG odoo_db odoo.modules.loading: Module base_import_module loaded in 0.00s, 0 queries 
+2026-06-15 16:55:14,561 23165 DEBUG odoo_db odoo.modules.loading: Loading module base_setup (8/11) 
+2026-06-15 16:55:14,563 23165 DEBUG odoo_db odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries 
+2026-06-15 16:55:14,563 23165 DEBUG odoo_db odoo.modules.loading: Loading module bus (9/11) 
+2026-06-15 16:55:14,569 23165 DEBUG odoo_db odoo.modules.loading: Module bus loaded in 0.01s, 0 queries 
+2026-06-15 16:55:14,569 23165 DEBUG odoo_db odoo.modules.loading: Loading module web_tour (10/11) 
+2026-06-15 16:55:14,571 23165 DEBUG odoo_db odoo.modules.loading: Module web_tour loaded in 0.00s, 0 queries 
+2026-06-15 16:55:14,571 23165 DEBUG odoo_db odoo.modules.loading: Loading module auth_passkey (11/11) 
+2026-06-15 16:55:14,591 23165 DEBUG odoo_db odoo.modules.loading: Module auth_passkey loaded in 0.02s, 0 queries 
+2026-06-15 16:55:14,591 23165 INFO odoo_db odoo.modules.loading: 11 modules loaded in 0.05s, 0 queries (+0 extra) 
+2026-06-15 16:55:14,679 23165 INFO odoo_db odoo.modules.loading: Modules loaded. 
+2026-06-15 16:55:14,681 23165 INFO odoo_db odoo.registry: Registry changed, signaling through the database 
+2026-06-15 16:55:14,682 23165 INFO odoo_db odoo.registry: Registry loaded in 1.008s 
+2026-06-15 16:55:14,682 23165 INFO odoo_db odoo.service.server: Initiating shutdown 
+2026-06-15 16:55:14,682 23165 INFO odoo_db odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2026-06-15 16:55:14,682 23165 DEBUG odoo_db odoo.service.server: on_close call <bound method Event.set of <threading.Event object at 0x10b758d00>> 
+2026-06-15 16:55:14,682 23165 DEBUG odoo_db odoo.service.server: on_close call <function _kick_all at 0x10b7a03a0> 
+2026-06-15 16:55:14,682 23165 DEBUG odoo_db odoo.service.server: current thread: <_MainThread(MainThread, started 8497864320)> 
+2026-06-15 16:55:14,682 23165 DEBUG odoo_db odoo.service.server: process <_MainThread(MainThread, started 8497864320)> (False) 
+2026-06-15 16:55:14,682 23165 INFO odoo_db odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 1 connections  
+2026-06-15 16:55:14,685 23165 DEBUG odoo_db odoo.service.server: -- 
