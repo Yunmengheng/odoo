@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Root Menu -->
+    <menuitem id="menu_library_root" name="Library" sequence="10"/>
+
+    <!-- Books Menu -->
+    <menuitem id="menu_library_books" name="Books" parent="menu_library_root" sequence="1"/>
+    <menuitem id="menu_library_books_all" name="All Books" parent="menu_library_books" action="action_library_book" sequence="1"/>
+    <menuitem id="menu_library_books_add" name="Add New Book" parent="menu_library_books" action="action_library_book_wizard" sequence="2"/>
+
+    <!-- Students Menu -->
+    <menuitem id="menu_library_students" name="Students" parent="menu_library_root" sequence="2" groups="group_library_librarian"/>
+    <menuitem id="menu_library_students_all" name="All Students" parent="menu_library_students" action="action_library_student" sequence="1"/>
+    <menuitem id="menu_library_students_add" name="Add New Student" parent="menu_library_students" action="action_library_student_wizard" sequence="2"/>
+
+    <!-- Borrowing Slips Menu -->
+    <menuitem id="menu_library_slips" name="Borrowing Slips" parent="menu_library_root" sequence="3"/>
+    <menuitem id="menu_library_slips_all" name="All Slips" parent="menu_library_slips" action="action_library_slip" sequence="1"/>
+</odoo>

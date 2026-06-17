@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_library_book_librarian,library.book.librarian,model_library_book,group_library_librarian,1,1,1,1
+access_library_book_student,library.book.student,model_library_book,group_library_student,1,0,0,0
+access_library_student_librarian,library.student.librarian,model_library_student,group_library_librarian,1,1,1,1
+access_library_student_student,library.student.student,model_library_student,group_library_student,0,0,0,0
+access_library_slip_librarian,library.slip.librarian,model_library_slip,group_library_librarian,1,1,1,1
+access_library_slip_student,library.slip.student,model_library_slip,group_library_student,1,0,0,0

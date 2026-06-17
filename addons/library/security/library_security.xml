@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="module_category_library" model="ir.module.category">
+        <field name="name">Library</field>
+        <field name="description">Category for library management</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="group_library_student" model="res.groups">
+        <field name="name">Student</field>
+        <field name="category_id" ref="module_category_library"/>
+        <field name="comment">Students can read books and their own borrowing slips.</field>
+    </record>
+
+    <record id="group_library_librarian" model="res.groups">
+        <field name="name">Librarian</field>
+        <field name="category_id" ref="module_category_library"/>
+        <field name="implied_ids" eval="[(4, ref('group_library_student'))]"/>
+        <field name="comment">Librarians have full access to all library records.</field>
+    </record>
+</odoo>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="seq_library_slip" model="ir.sequence">
+            <field name="name">Library Borrowing Slip</field>
+            <field name="code">library.slip</field>
+            <field name="prefix">LIB</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</odoo>
