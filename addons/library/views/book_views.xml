@@ -6,6 +6,11 @@
         <field name="model">library.book</field>
         <field name="arch" type="xml">
             <form>
+                <header>
+                    <button name="action_borrow_book" type="object" string="Borrow" class="btn-primary" 
+                            groups="library.group_library_student" 
+                            invisible="state != 'available'"/>
+                </header>
                 <sheet>
                     <group>
                         <field name="name"/>

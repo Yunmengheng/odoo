@@ -23,6 +23,24 @@ class LibraryBook(models.Model):
 
     slip_ids = fields.One2many('library.slip', 'book_id', string='Borrow Slips')
 
+    def action_borrow_book(self):
+        self.ensure_one()
+        if self.state != 'available':
+            raise ValidationError(_("This book is already borrowed."))
+        
+        # Get current student based on user (assuming user maps to student)
+        # For this implementation, we will raise an error if no student is found
+        student = self.env['library.student'].search([('name', '=', self.env.user.name)], limit=1)
+        if not student:
+             # Fallback: prompt to link student or create slip manually if needed
+             raise ValidationError(_("You are not linked to a student record. Please contact the librarian."))
+        
+        self.env['library.slip'].create({
+            'student_id': student.id,
+            'book_id': self.id,
+            'borrowed_date': fields.Date.today(),
+        })
+
     @api.constrains('name')
     def _check_name(self):
         for record in self:
