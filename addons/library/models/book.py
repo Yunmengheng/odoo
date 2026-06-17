@@ -28,14 +28,15 @@ class LibraryBook(models.Model):
         if self.state != 'available':
             raise ValidationError(_("This book is already borrowed."))
         
-        # Get current student based on user (assuming user maps to student)
-        # For this implementation, we will raise an error if no student is found
-        student = self.env['library.student'].search([('name', '=', self.env.user.name)], limit=1)
+        # Link current user to student record via user_id
+        student = self.env['library.student'].search([('user_id', '=', self.env.user.id)], limit=1)
         if not student:
-             # Fallback: prompt to link student or create slip manually if needed
-             raise ValidationError(_("You are not linked to a student record. Please contact the librarian."))
+             raise ValidationError(_("You are not linked to a student record. Please contact the librarian to link your user account."))
         
-        self.env['library.slip'].create({
+        # Use sudo to allow updating the state even if the student doesn't have write access
+        self.sudo().write({'state': 'borrowed'})
+        
+        self.env['library.slip'].sudo().create({
             'student_id': student.id,
             'book_id': self.id,
             'borrowed_date': fields.Date.today(),
